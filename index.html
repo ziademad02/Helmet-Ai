@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/><!-- animation -->
 </head>
-<body class="box-border m-0 p-0">
+<body class="box-border m-0 p-0 overflow-x-hidden">
 
-    <header class="sticky top-0 left-0 z-40 flex justify-between md:justify-evenly px-4 items-center py-5 bg-white border-slate-200 font-medium text-lg shadow-2xl ">
-        <div class="logo space-x-2">
+    <header class="sticky top-0 z-40 flex items-center justify-between md:justify-evenly px-4 md:px-10 py-5 bg-white shadow-2xl">
+        <div class="logo flex items-center gap-2">
             <h2 class="inline text-[30px] font-extrabold md:font-bold text-slate-900">Helmet <span class="text-blue-600">AI</span></h2>
-            <p class="bg-blue-100  text-blue-600 rounded-full p-1  text-xs inline align-top">Smart Safety System</p>
+            <p class="bg-blue-100  text-blue-600 rounded-full p-1  text-xs inline align-super">Smart Safety System</p>
             <p></p>
         </div>
         <button id="menu-btn" class="text-2xl md:hidden">
@@ -89,9 +89,9 @@
             <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#formz">Contact</a></li>
         </ul>
     </div>
-    <main class="min-h-screen bg-slate-50 flex flex-wrap items-center justify-center gap-10  px-4">
+    <main class="min-h-screen bg-slate-50 flex flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-16">
         <section class="content w-full max-w-xl  space-y-7 " data-aos="fade-right" data-aos-duration="1200">
-            <h1 class="text-3xl md:text-5xl font-[780] mt-10 md:mt-0 text-slate-900 leading-[45px] md:leading-[55px] " >Smart Helmet <br>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-[780] mt-10 md:mt-0 text-slate-900 leading-[45px] md:leading-[55px] " >Smart Helmet <br>
                 Protection Powered <br>
                 by <span class="text-blue-600">AI</span>
             </h1>
@@ -111,7 +111,7 @@
                 </div> 
             </div>
             <div class="buttons flex flex-wrap gap-4">
-                <button class=" bg-blue-600 hover:bg-blue-800 hover:shadow-xl rounded-lg h-[60px] w-full md:w-[250px] transition-all duration-400 font-medium text-lg text-white">Protect Your Ride</button>
+                <button class=" bg-blue-600 hover:bg-blue-800 hover:shadow-xl rounded-lg h-[60px] w-full  sm:w-[250px] transition-all duration-400 font-medium text-lg text-white">Protect Your Ride</button>
                 <!-- <button class=" space-x-3 border-gray-400 hover:border-blue-700 border-2 hover:text-blue-600 hover:shadow-xl rounded-lg h-[60px] w-[250px] transition-all duration-400 font-medium text-lg text-gray-400"><i class="fa-solid fa-play"></i> Watch Demo</button> -->
                  <button onclick="openVideo()" 
                         class="space-x-3 border-gray-400 hover:border-blue-700 border-2 hover:text-blue-600 hover:shadow-xl rounded-lg h-[60px] w-full md:w-[250px] transition-all duration-400 font-medium text-lg text-gray-400">
@@ -137,7 +137,7 @@
     </main>
     
     <div id="videoModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-5 md:px-0"> <!-- model video -->
-        <div class="bg-white rounded-xl p-4 relative w-[800px]">
+        <div class="bg-white rounded-xl p-4 relative w-[95%] md:w-[800px]">
         <button onclick="closeVideo()" class="absolute -top-3 right-4 text-5xl font-extrabold text-red-900">×</button>
         <video controls id="demoVideo" class="w-full rounded-lg">
         <source  src="images/WhatsApp Video 2025-11-21 at 3.45.39 PM.mp4" type="video/mp4">
@@ -395,7 +395,7 @@
             <div id="carousel" class="flex transition-transform duration-700"><!-- slides -->
             <div class="min-w-full relative group"><!-- slide 1 -->
             <img src="images/futuristic-smart-helmets-with-augmented-reality-displays-construction-workers-workers-wearing-helmets-with-ar-overlays-showing-blueprints-instructions_1230253-25570.jpg"
-            class="w-full h-[300px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
+            class="w-full h-[250px] sm:h-[350px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20"></div>
             <div class="absolute bottom-10 left-10 text-white">
             <h3 class="text-2xl md:text-3xl font-bold mb-2">
