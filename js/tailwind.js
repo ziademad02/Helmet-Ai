@@ -30,15 +30,29 @@ document.getElementById("videoModal").classList.add("hidden");
 //     return window.innerWidth < 768;
 //   }
 // });
-AOS.init({
-  duration: 600,
-  once: true,
-  offset: 80,
-  easing: "ease-in-out",
-  disable: function () {
-    return window.innerWidth < 768;
-  }
+// AOS.init({
+//   duration: 600,
+//   once: true,
+//   offset: 80,
+//   easing: "ease-in-out",
+//   disable: function () {
+//     return window.innerWidth < 768;
+//   }
+// });
+// animation
+function reveal(){ 
+let elements = document.querySelectorAll(".fade-left, .fade-right, .fade-up, .zoom-in");
+elements.forEach(function(el){
+let position = el.getBoundingClientRect().top;
+let screenHeight = window.innerHeight;
+if(position < screenHeight - 100){
+el.classList.add("show");
+}
 });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
 
 let index = 0;
 const carousel = document.getElementById("carousel");
