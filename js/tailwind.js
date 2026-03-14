@@ -26,9 +26,9 @@ document.getElementById("videoModal").classList.add("hidden");
 AOS.init({
   duration: 600,
   once: true,
-  // disable: function () {
-  //   return window.innerWidth < 768;
-  // }
+  disable: function () {
+    return window.innerWidth < 768;
+  }
 });
 
 let index = 0;
