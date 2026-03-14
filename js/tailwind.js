@@ -31,8 +31,13 @@ document.getElementById("videoModal").classList.add("hidden");
 //   }
 // });
 AOS.init({
-  duration: window.innerWidth < 768 ? 400 : 800,
-  once: true
+  duration: 600,
+  once: true,
+  offset: 80,
+  easing: "ease-in-out",
+  disable: function () {
+    return window.innerWidth < 768;
+  }
 });
 
 let index = 0;
