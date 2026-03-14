@@ -11,16 +11,12 @@
 </head>
 <body class="box-border m-0 p-0 overflow-x-hidden">
 
-    <header class="sticky top-0 z-40 flex items-center justify-between md:justify-evenly px-4 md:px-10 py-5 bg-white shadow-2xl">
+    <header class="sticky top-0 z-40 flex items-center justify-between  px-4 md:px-10 py-4 bg-white shadow-2xl">
         <div class="logo flex items-center gap-2">
-            <h2 class="inline text-[30px] font-extrabold md:font-bold text-slate-900">Helmet <span class="text-blue-600">AI</span></h2>
-            <p class="bg-blue-100  text-blue-600 rounded-full p-1  text-xs inline align-super">Smart Safety System</p>
-            <p></p>
+            <h2 class="inline text-xl sm:text-2xl md:text-[28px] font-extrabold text-slate-900">Helmet <span class="text-blue-600">AI</span></h2>
+            <p class="hidden sm:inline bg-blue-100 text-blue-600 rounded-full px-2 py-1 text-xs align-top">Smart Safety System</p>
         </div>
-        <button id="menu-btn" class="text-2xl md:hidden">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-            <ul class="hidden md:flex font-normal items-center gap-6">
+            <ul class="hidden  md:flex font-normal items-center gap-6">
                 <li>
                     <a href="#" class="relative px-4 py-2 text-slate-800 hover:text-blue-600 group">
                     <span class="relative z-10">Home</span>
@@ -67,35 +63,39 @@
                     </a>
                 </li>
             </ul>
+            <div>
+                <button class="hidden md:block bg-blue-600 rounded-lg px-6 py-2 transition-all duration-500  text-white hover:bg-blue-700"><a href="#formz">Get Started</a></button>
+            </div>
+            <button id="menu-btn" class="text-2xl  md:hidden">
+                <i class="fa-solid fa-bars"></i>
+             </button>
         </div>
-        <div>
-            <button class="hidden md:block bg-blue-600 rounded-lg h-[50px] w-[200px] transition-all duration-500  text-white hover:bg-blue-700"><a href="#formz">Get Started</a></button>
-        </div>
+        
     </header>
     <!-- موباي -->
     <div id="side-menu"
-            class=" fixed top-0 left-0 h-full w-64 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-50 bg-gradient-to-b from-blue-600 to-purple-600">
+            class=" fixed top-0 left-0 h-full w-[75%] max-w-[280px] bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-50 bg-gradient-to-b from-blue-600 to-purple-600">
         <div class="p-6 text-xl font-bold border-b flex justify-between items-center">
             <h2>Helmet <span class=" text-blue-900 text-2xl font-bold">AI</span></h2>
             <button id="close-menu">
             <i class="fa-solid fa-xmark text-2xl"></i>
             </button>
             </div>
-        <ul class="flex flex-col gap-6 p-6 text-lg">
-            <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#">Home</a></li>
-            <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#features">Features</a></li>
-            <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#technology">Technology</a></li>
-            <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#team">Team</a></li>
-            <li class="hover:text-white hover:scale-110 transition-all duration-300"><a href="#formz">Contact</a></li>
+        <ul class="flex flex-col gap-6 p-5 text-lg text-white">
+            <li class="hover:text-yellow-300 hover:scale-110 transition-all duration-300"><a href="#">Home</a></li>
+            <li class="hover:text-yellow-300 hover:scale-110 transition-all duration-300"><a href="#features">Features</a></li>
+            <li class="hover:text-yellow-300 hover:scale-110 transition-all duration-300"><a href="#technology">Technology</a></li>
+            <li class="hover:text-yellow-300 hover:scale-110 transition-all duration-300"><a href="#team">Team</a></li>
+            <li class="hover:text-yellow-300 hover:scale-110 transition-all duration-300"><a href="#formz">Contact</a></li>
         </ul>
     </div>
     <main class="min-h-screen bg-slate-50 flex flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-16">
         <section class="content w-full max-w-xl  space-y-7 " data-aos="fade-right" data-aos-duration="1200">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-[780] mt-10 md:mt-0 text-slate-900 leading-[45px] md:leading-[55px] " >Smart Helmet <br>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-[780] mt-10 md:mt-0 text-slate-900 leading-snug md:leading-[55px]" >Smart Helmet <br>
                 Protection Powered <br>
                 by <span class="text-blue-600">AI</span>
             </h1>
-            <p class="text-[18px] tracking-wide text-slate-500 w-full ">Helmet AI detects accidents, sends emergency alerts, and protects riders using advanced artificial intelligence technology.</p>
+            <p class="text-[16px] md:text-[18px] tracking-wide text-slate-500 w-full ">Helmet AI detects accidents, sends emergency alerts, and protects riders using advanced artificial intelligence technology.</p>
             <div class="icons flex flex-wrap gap-4">
                 <div class="space-x-2 inline-block">
                     <div class="inline-block bg-green-600 text-white  size-8 rounded-full text-center"><i class="fa-solid fa-brain  leading-8"></i></div>
@@ -114,15 +114,15 @@
                 <button class=" bg-blue-600 hover:bg-blue-800 hover:shadow-xl rounded-lg h-[60px] w-full  sm:w-[250px] transition-all duration-400 font-medium text-lg text-white">Protect Your Ride</button>
                 <!-- <button class=" space-x-3 border-gray-400 hover:border-blue-700 border-2 hover:text-blue-600 hover:shadow-xl rounded-lg h-[60px] w-[250px] transition-all duration-400 font-medium text-lg text-gray-400"><i class="fa-solid fa-play"></i> Watch Demo</button> -->
                  <button onclick="openVideo()" 
-                        class="space-x-3 border-gray-400 hover:border-blue-700 border-2 hover:text-blue-600 hover:shadow-xl rounded-lg h-[60px] w-full md:w-[250px] transition-all duration-400 font-medium text-lg text-gray-400">
+                        class="space-x-3 border-gray-400 hover:border-blue-700 border-2 hover:text-blue-600 hover:shadow-xl rounded-lg h-[60px] w-full sm:w-[250px] transition-all duration-400 font-medium text-lg text-gray-400">
                         <i class="fa-solid fa-play"></i> Watch Demo
                 </button>
             </div>
         </section>
-        <div class="relative img w-full max-w-xl h-[250px] md:h-[400px] bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-2xl shadow-2xl shadow-gray-400 " data-aos="fade-left" data-aos-duration="600">
+        <div class="relative img w-full max-w-xl h-[220px] sm:h-[260px] md:h-[400px] bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-2xl shadow-2xl shadow-gray-400 " data-aos="fade-left" data-aos-duration="600">
                 <img src="images/360_F_1148832237_8lx5zkd8h9wDI2dAKARttqf4E6E3WYhK.jpg"
                     class="w-full h-full object-cover rounded-xl ">
-                <div class="absolute -bottom-6 -left-6  bg-white  rounded-2xl shadow-xl p-3 md:p-4 hover:rotate-12 transition-all duration-500">
+                <div class="absolute -bottom-5 left-3 md:-left-6  bg-white  rounded-2xl shadow-xl p-3 md:p-4 hover:rotate-12 transition-all duration-500">
                     <div class="flex items-center justify-center gap-3  ">
                         <div class="bg-green-100 h-10 w-10 md:w-12 md:h-12 rounded-full flex items-center justify-center">
                             <i class="fas fa-users text-green-600 text-xl  "></i>
@@ -136,29 +136,29 @@
         </div>
     </main>
     
-    <div id="videoModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-5 md:px-0"> <!-- model video -->
-        <div class="bg-white rounded-xl p-4 relative w-[95%] md:w-[800px]">
+    <div id="videoModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"> <!-- model video -->
+        <div class="bg-white rounded-xl p-4 relative w-[90vw] max-w-[800px]">
         <button onclick="closeVideo()" class="absolute -top-3 right-4 text-5xl font-extrabold text-red-900">×</button>
-        <video controls id="demoVideo" class="w-full rounded-lg">
+        <video controls id="demoVideo" class="w-full max-h-[75vh] object-contain rounded-lg">
         <source  src="images/WhatsApp Video 2025-11-21 at 3.45.39 PM.mp4" type="video/mp4">
         </video>
         </div>
     </div>
 
-    <section class="w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-slate-50 to-slate-100 py-20 px-5"> <!-- ABOUT SECTION -->
+    <section class="w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-slate-50 to-slate-100 py-20 px-4 md:px-6"> <!-- ABOUT SECTION -->
         <div class="text-center max-w-[800px] mb-16" data-aos="fade-up" data-aos-duration="1200">
-            <h2 class="text-4xl mb-5 text-slate-900 font-bold">
+            <h2 class="text-3xl md:text-4xl mb-5 text-slate-900 font-bold">
             About Helmet AI
             </h2>
-            <p class="text-lg leading-relaxed text-slate-600">
+            <p class="text-[16px] md:text-lg leading-relaxed text-slate-600">
             Helmet AI is an advanced smart safety system designed to protect workers in hazardous environments.
             By combining artificial intelligence, smart sensors, and augmented reality technology, the helmet
             can detect potential dangers such as fire, toxic gases, and obstacles in real time.
             Helmet AI helps workers stay aware of their surroundings and receive instant alerts.
             </p>
         </div>
-        <div class="flex flex-wrap justify-center gap-12">
-            <div class="w-[350px] md:w-[380] h-[380px] [perspective:1000px] group" data-aos="fade-right" data-aos-duration="1200"><!-- CARD 1 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-[1200px] mx-auto w-full">
+            <div class="w-full h-[340px] md:h-[380px] [perspective:1000px] group" data-aos="fade-right" data-aos-duration="1200"><!-- CARD 1 -->
             <div class="relative w-full h-full transition-transform duration-700
             [transform-style:preserve-3d] group-focus-within:[transform:rotateY(180deg)]">
                 <div class="absolute w-full h-full rounded-2xl overflow-hidden
@@ -188,7 +188,7 @@
                 </div>
             </div>
             </div>
-            <div class="w-[350px] md:w-[380] h-[380px] [perspective:1000px] group" data-aos="fade-up" data-aos-duration="1200"><!-- CARD 2 -->
+            <div class="w-full h-[340px] md:h-[380px] [perspective:1000px] group" data-aos="fade-up" data-aos-duration="1200"><!-- CARD 2 -->
             <div class="relative w-full h-full transition-transform duration-700
             [transform-style:preserve-3d] group-focus-within:[transform:rotateY(180deg)]">
                 <div class="absolute w-full h-full rounded-2xl overflow-hidden
@@ -217,7 +217,7 @@
                 </div>
             </div>
             </div>
-            <div class="w-[350px] md:w-[380] h-[380px] [perspective:1000px] group" data-aos="fade-left" data-aos-duration="1200"><!-- CARD 3 -->
+            <div class="w-full h-[340px] md:h-[380px] [perspective:1000px] group" data-aos="fade-left" data-aos-duration="1200"><!-- CARD 3 -->
                 <div class="relative w-full h-full transition-transform duration-700
                 [transform-style:preserve-3d] group-focus-within:[transform:rotateY(180deg)]">
                     <div class="absolute w-full h-full rounded-2xl overflow-hidden
@@ -252,14 +252,14 @@
         <h2 class="text-3xl md:text-4xl text-slate-900 text-center font-bold " data-aos="fade-up" data-aos-duration="1200" >Smart Helmet AI Features</h2>
         <p class="text-center text-slate-500 tracking-wider font-semibold leading-10 text-lg pb-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Advanced AI technology designed to protect riders and improve road safety.</p>
         <div class="line h-[4px] w-24 bg-blue-600 m-auto rounded-xl mb-16 " data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300"></div>
-        <div class="parent flex flex-wrap justify-center gap-8 px-4">
+        <div class="parent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 max-w-[1200px] mx-auto">
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
-                <div class="border-gray-200 border p-8 rounded-2xl space-y-5 hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3">
+                <div class="border-gray-200 border p-6 md:p-8 rounded-2xl space-y-5 hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3">
                     <div class="icons h-16 w-16 rounded-xl bg-blue-100 text-blue-600 text-3xl flex justify-center items-center mb-4 group-hover:bg-blue-600 transition-all ">
                         <i class="fa-solid fa-brain group-hover:text-white transition-all"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-3">AI Accident Detection</h2>
-                    <p class="text-gray-600  leading-relaxed text-base font-semibold tracking-wide">Detects crashes instantly using AI.<br> sensors and motion <br> analysis.</p>
+                    <h2 class="text-xl md:text-2xl font-bold mb-3">AI Accident Detection</h2>
+                    <p class="text-gray-600  leading-relaxed text-sm md:text-base font-semibold tracking-wide">Detects crashes instantly using AI. sensors and motion analysis.</p>
                     <p class="space-y-3">
                     <i class="fa-solid fa-check text-green-500 "></i> Crash Detection<br>
                     <i class="fa-solid fa-check text-green-500 "></i> Impact Analysis<br>
@@ -268,12 +268,12 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <div class="border-gray-200 border p-8 rounded-2xl space-y-5  hover:border-purple-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3 " >
+                <div class="border-gray-200 border p-6 md:p-8 rounded-2xl space-y-5  hover:border-purple-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3 " >
                     <div class="icons   h-16 w-16 rounded-xl bg-purple-100 text-purple-600 text-3xl flex justify-center items-center mb-4 group-hover:bg-purple-600 ">
                         <i class="fa-solid fa-bell group-hover:text-white transition-all"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-3">Emergency Alerts</h2>
-                    <p class="text-gray-600  leading-relaxed text-base font-semibold tracking-wide">Sends real-time alerts to emergency<br> contacts when accidents <br> occur.</p>
+                    <h2 class="text-xl md:text-2xl font-bold mb-3">Emergency Alerts</h2>
+                    <p class="text-gray-600  leading-relaxed text-sm md:text-base font-semibold tracking-wide">Sends real-time alerts to emergency contacts when accidents occur.</p>
                     <p class="space-y-3">
                     <i class="fa-solid fa-check text-green-500 "></i> Real-time Notification<br>
                     <i class="fa-solid fa-check text-green-500 "></i> GPS Location<br>
@@ -282,12 +282,12 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                <div class="border-gray-200 border p-8 rounded-2xl space-y-5  hover:border-green-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3">
+                <div class="border-gray-200 border p-6 md:p-8 rounded-2xl space-y-5  hover:border-green-600 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-3">
                     <div class="icons   h-16 w-16 rounded-xl bg-green-100 text-green-600 text-3xl flex justify-center items-center mb-4 group-hover:bg-green-600">
                         <i class="fa-solid fa-chart-line group-hover:text-white transition-all"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-3">Smart Rider Dashboard</h2>
-                    <p class="text-gray-600  leading-relaxed text-base font-semibold tracking-wide">Monitor helmet safety data and rider<br>activity through a smart <br> dashboard.</p>
+                    <h2 class="text-xl md:text-2xl font-bold mb-3">Smart Rider Dashboard</h2>
+                    <p class="text-gray-600  leading-relaxed text-sm md:text-base font-semibold tracking-wide">Monitor helmet safety data and rider activity through a smart  dashboard.</p>
                     <p class="space-y-3">
                     <i class="fa-solid fa-check text-green-500 "></i> Safety Reports<br>
                     <i class="fa-solid fa-check text-green-500 "></i> Ride Analytics<br>
@@ -300,9 +300,9 @@
 
    <!-- TECHNOLOGY -->
 <section id="technology" class="w-full py-20 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
     <!-- IMAGE -->
-    <div class="h-[350px] md:h-[500px] overflow-hidden rounded-xl group "  data-aos="fade-right" data-aos-duration="1200">
+    <div class="h-[250px] sm:h-[320px] md:h-[500px] overflow-hidden rounded-xl group "  data-aos="fade-right" data-aos-duration="1200">
       <img src="images/creating-low-poly-landing-page-template-construction-head-helmet-illustration-polygonal-workwear-homepage-design-310513108.jpg"
       class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
     </div>
@@ -311,10 +311,10 @@
       <span class="text-blue-600 font-semibold uppercase tracking-widest">
         Technology
       </span>
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
         Smart Technology Behind Helmet AI
       </h2>
-      <p class="text-slate-600 leading-relaxed">
+      <p class="text-sm md:text-base text-slate-600 leading-relaxed">
         Helmet AI combines artificial intelligence, sensors, and augmented reality
         to provide real-time industrial safety monitoring.
       </p>
@@ -322,7 +322,7 @@
       <div class="space-y-4">
         <!-- ITEM -->
         <details class="group border rounded-xl overflow-hidden transition hover:shadow-md">
-          <summary class="flex justify-between items-center cursor-pointer px-5 py-4 font-semibold text-slate-900
+          <summary class="flex justify-between items-center cursor-pointer px-4 md:px-5 py-3 md:py-4 font-semibold text-slate-900
           group-open:bg-blue-100 group-open:text-blue-900 transition">
             <span class="flex items-center gap-3">
               <i class="fa-solid fa-microchip text-blue-600"></i>
@@ -330,14 +330,14 @@
             </span>
             <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
           </summary>
-          <p class="px-5 pb-4 text-slate-600">
+          <p class="px-5 pb-4 text-sm md:text-base text-slate-600">
             The system uses AI models to detect obstacles, tools,
             vehicles and unsafe situations in real time.
           </p>
         </details>
         <!-- ITEM -->
         <details class="group border rounded-xl overflow-hidden transition hover:shadow-md">
-          <summary class="flex justify-between items-center cursor-pointer px-5 py-4 font-semibold text-slate-900
+          <summary class="flex justify-between items-center cursor-pointer px-4 md:px-5 py-3 md:py-4 font-semibold text-slate-900
           group-open:bg-blue-100 group-open:text-blue-900 transition">
             <span class="flex items-center gap-3">
               <i class="fa-solid fa-eye text-blue-600"></i>
@@ -345,14 +345,14 @@
             </span>
             <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
           </summary>
-          <p class="px-5 pb-4 text-slate-600">
+          <p class="px-5 pb-4 text-sm md:text-base text-slate-600">
             Safety alerts appear directly on the helmet visor using
             augmented reality displays.
           </p>
         </details>
         <!-- ITEM -->
         <details class="group border rounded-xl overflow-hidden transition hover:shadow-md">
-          <summary class="flex justify-between items-center cursor-pointer px-5 py-4 font-semibold text-slate-900
+          <summary class="flex justify-between items-center cursor-pointer px-4 md:px-5 py-3 md:py-4 font-semibold text-slate-900
           group-open:bg-blue-100 group-open:text-blue-900 transition">
             <span class="flex items-center gap-3">
               <i class="fa-solid fa-temperature-high text-blue-600"></i>
@@ -360,14 +360,14 @@
             </span>
             <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
           </summary>
-          <p class="px-5 pb-4 text-slate-600">
+          <p class="px-5 pb-4 text-sm md:text-base text-slate-600">
             Sensors monitor temperature, gas levels,
             orientation and environmental risks.
           </p>
         </details>
         <!-- ITEM -->
         <details class="group border rounded-xl overflow-hidden transition hover:shadow-md">
-          <summary class="flex justify-between items-center cursor-pointer px-5 py-4 font-semibold text-slate-900
+          <summary class="flex justify-between items-center cursor-pointer px-4 md:px-5 py-3 md:py-4 font-semibold text-slate-900
           group-open:bg-blue-100 group-open:text-blue-900 transition">
             <span class="flex items-center gap-3">
               <i class="fa-solid fa-brain text-blue-600"></i>
@@ -375,7 +375,7 @@
             </span>
             <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
           </summary>
-          <p class="px-5 pb-4 text-slate-600">
+          <p class="px-5 pb-4 text-sm md:text-base text-slate-600">
             AI analyzes behavior patterns to detect worker fatigue
             and stress levels.
           </p>
@@ -387,7 +387,7 @@
 
             <!-- TECHNOLOGY SHOWCASE -->
     <section id="ai" class="w-full py-20 bg-white">
-            <div class="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1200">
+            <div class="max-w-6xl w-full mx-auto px-4" data-aos="fade-up" data-aos-duration="1200">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
             Helmet AI Technology
             </h2>
@@ -395,10 +395,10 @@
             <div id="carousel" class="flex transition-transform duration-700"><!-- slides -->
             <div class="min-w-full relative group"><!-- slide 1 -->
             <img src="images/futuristic-smart-helmets-with-augmented-reality-displays-construction-workers-workers-wearing-helmets-with-ar-overlays-showing-blueprints-instructions_1230253-25570.jpg"
-            class="w-full h-[250px] sm:h-[350px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
+            class="w-full h-[220px] sm:h-[320px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20"></div>
-            <div class="absolute bottom-10 left-10 text-white">
-            <h3 class="text-2xl md:text-3xl font-bold mb-2">
+            <div class="absolute bottom-6 left-5 md:bottom-10 md:left-10 text-white">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
             AI Hazard Detection
             </h3>
             <p class="text-slate-200">
@@ -408,10 +408,10 @@
             </div>
             <div class="min-w-full relative group"><!-- slide 2 -->
             <img src="images/2.jpeg"
-            class="w-full h-[300px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
+            class="w-full h-[220px] sm:h-[320px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20"></div>
-            <div class="absolute bottom-10 left-10 text-white">
-            <h3 class="text-2xl md:text-3xl font-bold mb-2">
+            <div class="absolute bottom-6 left-5 md:bottom-10 md:left-10 text-white">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
             Smart Sensors
             </h3>
             <p class="text-slate-200">
@@ -421,10 +421,10 @@
             </div>
             <div class="min-w-full relative group"><!-- slide 3 -->
             <img src="images/1.jpeg"
-            class="w-full h-[300px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
+            class="w-full h-[220px] sm:h-[320px] md:h-[520px] object-cover transition duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20"></div>
-            <div class="absolute bottom-10 left-10 text-white">
-            <h3 class="text-2xl md:text-3xl font-bold mb-2">
+            <div class="absolute bottom-6 left-5 md:bottom-10 md:left-10 text-white">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
             AR Safety Alerts
             </h3>
             <p class="text-slate-200">
@@ -445,6 +445,7 @@
             </div>
             </div>
         </section>
+
     <section class="relative sec3 min-h-[300px] w-full bg-gradient-to-r from-blue-600 to-purple-600 py-20 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
         <div class="w-full mx-auto px-4">
             <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -475,11 +476,11 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet the Helmet AI Team</h2>
                 <p class="text-base md:text-xl text-gray-600">A team of engineers and AI specialists building smarter and safer helmets for riders.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-                <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100 ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition-all group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-blue-400 to-purple-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-400 to-purple-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -488,17 +489,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-blue-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Mostafa Ahmed</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Mostafa Ahmed</h3>
                                 <p class="text-blue-600 mb-3">Team Leader</p>
-                                <p class="text-gray-600 text-sm">Leads the development of the Helmet AI system and coordinates the team workflow.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Leads the development of the Helmet AI system and coordinates the team workflow.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -507,17 +508,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-purple-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Amy Saeed</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Amy Saeed</h3>
                                 <p class="text-purple-600 mb-3">AI Engineer</p>
-                                <p class="text-gray-600 text-sm">Works on artificial intelligence models used for hazard detection.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Works on artificial intelligence models used for hazard detection.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -526,17 +527,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-green-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Sara Mohamed</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Sara Mohamed</h3>
                                 <p class="text-green-600 mb-3">Embedded Systems Engineer</p>
-                                <p class="text-gray-600 text-sm">Develops the smart hardware and sensors integrated inside the helmet.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Develops the smart hardware and sensors integrated inside the helmet.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition-all group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -545,17 +546,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-orange-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Donia Khaled</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Donia Khaled</h3>
                                 <p class="text-orange-600 mb-3">UI / UX Designer</p>
-                                <p class="text-gray-600 text-sm">Designs user interfaces for monitoring safety data and alerts.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Designs user interfaces for monitoring safety data and alerts.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition-all group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-blue-400 to-purple-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-400 to-purple-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -564,17 +565,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-blue-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Hager Mahmoud</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Hager Mahmoud</h3>
                                 <p class="text-blue-600 mb-3">Frontend Developer</p>
-                                <p class="text-gray-600 text-sm">Builds the web interface and dashboard for the Helmet AI platform.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Builds the web interface and dashboard for the Helmet AI platform.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -583,17 +584,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-purple-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Nada Mohamed</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Nada Samy</h3>
                                 <p class="text-purple-600 mb-3">Data Analyst</p>
-                                <p class="text-gray-600 text-sm">Analyzes collected safety data to improve system performance.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Analyzes collected safety data to improve system performance.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -602,17 +603,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-green-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Salma Nagi</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Salma Nagi</h3>
                                 <p class="text-green-600 mb-3">Backend Developer</p>
-                                <p class="text-gray-600 text-sm">Develops server-side systems and manages application data.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Develops server-side systems and manages application data.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition-all group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -621,17 +622,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-orange-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Mohamed Ashraf</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Mohamed Ashraf</h3>
                                 <p class="text-orange-600 mb-3">Software Developer</p>
-                                <p class="text-gray-600 text-sm">Implements system logic and integrates AI features into the platform.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Implements system logic and integrates AI features into the platform.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-green-400 to-cyan-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -640,17 +641,17 @@
                                 <a href="#" class="w-10 h-10 bg-white text-green-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Hassan Mahmoud</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Hassan Mahmoud</h3>
                                 <p class="text-green-600 mb-3">Hardware Engineer</p>
-                                <p class="text-gray-600 text-sm">Designs and tests the electronic components used in the smart helmet.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Designs and tests the electronic components used in the smart helmet.</p>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-3xl transition-all group hover:scale-105">
                         <div class="h-64 overflow-hidden relative">
-                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-8xl text-white flex  justify-center items-center ">
+                            <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-400 text-7xl md:text-8xl text-white flex  justify-center items-center ">
                                 <i class="fa-solid fa-circle-user"></i>
                             </div>
                             <div class="absolute bg-blue-600/80 inset-0 gap-4 flex justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -659,10 +660,10 @@
                                 <a href="#" class="w-10 h-10 bg-white text-orange-600 rounded-full flex justify-center items-center hover:bg-blue-100"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
-                        <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold ">Ziad Emad</h3>
+                        <div class="p-5 md:p-6 text-center">
+                                <h3 class="text-lg md:text-xl font-bold ">Ziad Emad</h3>
                                 <p class="text-orange-600 mb-3">Software Developer</p>
-                                <p class="text-gray-600 text-sm">Develops the software platform that connects helmet data with cloud services.</p>
+                                <p class="text-gray-600 text-xs md:text-sm">Develops the software platform that connects helmet data with cloud services.</p>
                         </div>
                     </div>
                 </div>
@@ -672,20 +673,20 @@
     <footer id="formz" class="bg-gray-900 text-white">
         <div class="container mx-auto px-4 py-16 ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-gray-800 p-8 rounded-3xl" data-aos="fade-right"data-aos-duration="1200"data-aos-delay="200">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-3xl" data-aos="fade-right"data-aos-duration="1200"data-aos-delay="200">
                     <h3 class="text-white text-2xl font-bold mb-6" data-aos="fade-right"data-aos-duration="1200">Contact Helmet AI Team</h3>
                     <form id="contactForm" class="space-y-6" method="get">
-                            <div><input type="text"  id="name"  placeholder="Full Name" class="w-full p-4 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-4 focus:ring-blue-600 focus:outline-none transition"></div>
-                            <div><input type="email"  id="email"  placeholder="Email Address" class="w-full p-4 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-4 focus:ring-blue-600 focus:outline-none transition"></div>
+                            <div><input type="text"  id="name"  placeholder="Full Name" class="w-full p-3 md:p-4 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-4 focus:ring-blue-600 focus:outline-none transition"></div>
+                            <div><input type="email"  id="email"  placeholder="Email Address" class="w-full p-3 md:p-4 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-4 focus:ring-blue-600 focus:outline-none transition"></div>
                             <div><textarea rows="5" name="Massage" id="" placeholder="Tell us about your question or feedback" class="w-full rounded-lg bg-gray-700 focus:ring-4 focus:ring-blue-600 focus:outline-none p-4"></textarea></div>
-                            <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-700  py-4 rounded-lg transition-all duration-300">Send Message</button>
+                            <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-700  p-3 md:p-4 rounded-lg transition-all duration-300">Send Message</button>
                             <div id="customAlert"
                                 class="fixed top-6 right-6 bg-blue-600 text-white px-6 py-4 rounded-xl shadow-lg hidden transition-all duration-300">
                                 ✔ Message Sent Successfully
                             </div>
                     </form>
                 </div>
-                <div class="space-y-8"  md:data-aos="fade-left"data-aos-duration="600" data-aos-delay="200">
+                <div class="space-y-8" data-aos="fade-left" data-aos-duration="1200"  data-aos-delay="200">
                     <h3 class="text-2xl font-bold">Helmet AI Support</h3>
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
@@ -716,7 +717,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="h-52 rounded-2xl bg-gray-800 overflow-hidden" data-aos="zoom-in"data-aos-duration="600">
+                    <div class="h-44 md:h-52 rounded-2xl bg-gray-800 overflow-hidden" data-aos="zoom-in"data-aos-duration="600">
                         <div class="h-full text-gray-400 bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center ">
                                 <i class="fa-regular fa-map text-4xl opacity-45"></i>
                                 <span class="ml-2"><a href="https://maps.app.goo.gl/CfzfKzeSAe4FXZNs5"> Find Our Safety Center</a></span>
@@ -730,7 +731,7 @@
                         <div class="text-gray-400 text-sm">
                             © 2026 Helmet AI Safety System. All rights reserved.
                         </div>
-                        <div class="flex gap-6">
+                        <div class="flex gap-5 md:gap-6">
                             <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f text-xl"></i></a>
                             <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
                             <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in text-xl"></i></a>
