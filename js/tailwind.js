@@ -23,12 +23,16 @@ document.getElementById("videoModal").classList.add("hidden");
 
 
 
+// AOS.init({
+//   duration: 600,
+//   once: true,
+//   disable: function () {
+//     return window.innerWidth < 768;
+//   }
+// });
 AOS.init({
-  duration: 600,
-  once: true,
-  // disable: function () {
-  //   return window.innerWidth < 768;
-  // }
+  duration: window.innerWidth < 768 ? 400 : 800,
+  once: true
 });
 
 let index = 0;
