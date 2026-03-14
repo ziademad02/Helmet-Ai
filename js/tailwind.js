@@ -2,19 +2,15 @@ const menuBtn = document.getElementById("menu-btn")
 const sideMenu = document.getElementById("side-menu")
 const closeBtn = document.getElementById("close-menu")
 let video = document.getElementById("demoVideo");
-
 menuBtn.onclick = () => {
 sideMenu.classList.remove("-translate-x-full");
 }
 closeBtn.onclick = () => {
 sideMenu.classList.add("-translate-x-full");
 }
-
-
 function openVideo(){
 document.getElementById("videoModal").classList.remove("hidden");
 }
-
 function closeVideo(){
 video.pause();      
 video.currentTime = 0; 
@@ -29,6 +25,7 @@ AOS.init({
   }
 });
 
+// carousel
 let index = 0;
 const carousel = document.getElementById("carousel");
 function showSlide() {
@@ -46,6 +43,7 @@ showSlide();
 }
 // setInterval(nextSlide, 20000); //  slideبيجيب اللي بعده
 
+// form
 const form = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 const nameInput = document.getElementById("name");
@@ -63,7 +61,6 @@ e.preventDefault();
 const name = nameInput.value.trim();
 const email = emailInput.value.trim();
 const message = form.querySelector('textarea').value.trim();
-
 if(name === "" || email === "" || message === ""){
 alert("Please fill all fields");
 return;
