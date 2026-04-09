@@ -20,9 +20,9 @@ document.getElementById("videoModal").classList.add("hidden");
 AOS.init({
   duration: 600,
   once: true,
-  disable: function () {
-    return window.innerWidth < 768;
-  }
+  // disable: function () {
+  //   return window.innerWidth < 768;
+  // }
 });
 
 // carousel
@@ -41,7 +41,7 @@ index--;
 if(index < 0){index = 2;}
 showSlide();
 }
-// setInterval(nextSlide, 20000); //  slideبيجيب اللي بعده
+setInterval(nextSlide, 3000); //  slideبيجيب اللي بعده
 
 // form
 const form = document.getElementById("contactForm");
@@ -72,4 +72,22 @@ setTimeout(()=>{
 alertBox.classList.add("hidden");
 form.submit();   // هنا يتم إرسال البيانات للـ backend
 },2000);
+});
+
+
+// Dark Mode
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("theme-toggle");
+    if (!toggleBtn) return;
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+    }
+    toggleBtn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        if (document.documentElement.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
 });
