@@ -3,3 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+#typing {
+  white-space: pre-line;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

@@ -1,3 +1,40 @@
+// typing text yaa abd
+
+const text = `Smart Helmet
+Protection Powered
+by AI`;
+
+let charPos = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+// السرعات (تتحكم فيهم براحتك)
+const typingSpeed = 120;    
+const deletingSpeed = 80;    
+const delayAfterTyping = 5000; 
+
+function type() {
+  if (!isDeleting) {
+    typingElement.textContent = text.substring(0, charPos + 1);
+    charPos++;
+    if (charPos === text.length) {
+      isDeleting = true;
+      setTimeout(type, delayAfterTyping);
+      return;
+    }
+  } else {
+    typingElement.textContent = text.substring(0, charPos - 1);
+    charPos--;
+    if (charPos === 0) {
+      isDeleting = false;
+    }
+  }
+  setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+}
+type();
+
+
+
 const menuBtn = document.getElementById("menu-btn")
 const sideMenu = document.getElementById("side-menu")
 const closeBtn = document.getElementById("close-menu")
