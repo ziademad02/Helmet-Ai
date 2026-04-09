@@ -1,12 +1,10 @@
 // typing text yaa abd
-
 const text = `Smart Helmet
 Protection Powered
 by AI`;
 
 let charPos = 0;
 let isDeleting = false;
-
 const typingElement = document.getElementById("typing");
 // السرعات (تتحكم فيهم براحتك)
 const typingSpeed = 120;    
@@ -34,7 +32,7 @@ function type() {
 type();
 
 
-
+// Model vidio ya abd
 const menuBtn = document.getElementById("menu-btn")
 const sideMenu = document.getElementById("side-menu")
 const closeBtn = document.getElementById("close-menu")
@@ -104,14 +102,11 @@ return;
 }
 const alertBox = document.getElementById("customAlert");
 alertBox.classList.remove("hidden");
-
 setTimeout(()=>{
 alertBox.classList.add("hidden");
 form.submit();   // هنا يتم إرسال البيانات للـ backend
 },2000);
 });
-
-
 // Dark Mode
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("theme-toggle");
