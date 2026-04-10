@@ -12,3 +12,42 @@
 @keyframes blink {
   50% { opacity: 0; }
 }
+/* border img */
+.animated-border::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        #0b7d97 0deg,   
+        #9d00ff 90deg,  
+        #d50000 180deg, 
+        #9d00ff 270deg,
+        #031469 360deg
+    );
+    filter: blur(10px); 
+    animation: rotate 2s linear infinite; 
+    z-index: 1;
+}
+.animated-border::after {
+    content: '';
+    position: absolute;
+    inset: 10px;  
+    background: #fff; 
+    border-radius: 12px;  
+    z-index: 2;
+}
+.animated-border img {
+    z-index: 3;
+    position: relative;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
