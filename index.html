@@ -532,7 +532,7 @@
                             </div>
                         </div>
                         <div class="p-5 md:p-6 text-center">
-                                <h3 class="text-lg md:text-xl font-bold  text-gray-900 dark:text-white">Amy Saeed</h3>
+                                <h3 class="text-lg md:text-xl font-bold  text-gray-900 dark:text-white">Amy Said</h3>
                                 <p class="text-purple-600 mb-3">AI Engineer</p>
                                 <p class="text-gray-600 text-xs md:text-sm">Works on artificial intelligence models used for hazard detection.</p>
                         </div>
@@ -769,6 +769,45 @@
             </div>
         </div>
     </footer>
+<!-- Floating Button -->
+<div class="fixed bottom-6 left-6 z-50">
+  <button onclick="toggleChat()"
+    class="flex items-center gap-3 bg-white/90 dark:bg-slate-800/90 backdrop-blur-lg shadow-2xl px-5 py-3 rounded-full border border-purple-200 dark:border-purple-700 hover:scale-105 transition">
+    <span class="text-slate-800 dark:text-white font-medium">
+      Smart Chat ..
+    </span>
+    <div class="w-10 h-10 flex items-center justify-center 
+      bg-gradient-to-r from-purple-600 to-pink-500 
+      text-white rounded-full shadow-md">
+      ✨
+    </div>
+  </button>
+</div>
+<!-- Chat Box -->
+<div id="chatBox" class="hidden fixed bottom-24 left-6 w-[340px] rounded-2xl overflow-hidden z-50 shadow-[0_20px_60px_rgba(139,92,246,0.5)]">
+  <!-- Header -->
+  <div class="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 flex justify-between items-center">
+    <span class="font-semibold">Helmet AI</span>
+    <button onclick="toggleChat()" class="hover:scale-110">✖</button>
+  </div>
+  <!-- Messages -->
+  <div id="messages"
+    class="h-72 overflow-y-auto p-3 space-y-3 text-sm
+    bg-white dark:bg-slate-900 text-slate-800 dark:text-white">
+  </div>
+  <!-- Input -->
+  <div class="flex border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800">
+    <input id="input"
+      class="flex-1 p-3 outline-none bg-transparent 
+  text-black dark:text-white 
+  placeholder-gray-400"
+      placeholder="Ask about Helmet AI..." />
+    <button onclick="sendMessage()"
+      class="px-4 text-purple-600 text-xl hover:scale-110 transition">
+      ➤
+    </button>
+  </div>
+</div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/tailwind.js"></script>
 </body>
