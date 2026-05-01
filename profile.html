@@ -1,0 +1,104 @@
+<!-- profile.html — content fragment loaded by router.js into #page-content -->
+<section class="auth-bg min-h-[calc(100vh-160px)] px-4 py-10 max-w-6xl mx-auto">
+
+    <div id="loading" class="text-center py-12 text-gray-500 dark:text-gray-400">
+        <i class="fa-solid fa-spinner fa-spin text-2xl"></i>
+        <p class="mt-2">Loading your profile…</p>
+    </div>
+
+    <div id="content" class="hidden">
+        <!-- Welcome card -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl border-t-4 border-purple-600 p-6 mb-6">
+            <div class="flex items-center gap-4">
+                <div id="avatar" class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center text-white text-2xl font-bold ring-4 ring-purple-200 dark:ring-purple-900"></div>
+                <div class="flex-1">
+                    <h1 class="text-2xl font-extrabold">Hello, <span id="hello-name"></span> 👋</h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        <i class="fa-solid fa-id-badge mr-1"></i><span id="hello-job"></span>
+                        &nbsp;·&nbsp;
+                        <i class="fa-solid fa-user mr-1"></i>@<span id="hello-username"></span>
+                    </p>
+                </div>
+                <a href="#dashboard"
+                    class="hidden sm:inline-block bg-gradient-to-r from-purple-500 to-purple-800 hover:from-purple-600 hover:to-purple-900 text-white text-sm font-semibold px-5 py-2 rounded-lg transition shadow">
+                    Live Dashboard <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Worker info + Helmet info -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+
+            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-6">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-user text-purple-600"></i>
+                    Worker Information
+                </h2>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between border-b border-gray-100 dark:border-gray-700 py-2">
+                        <span class="text-gray-500 dark:text-gray-400">National ID</span>
+                        <span class="font-semibold" id="w-nid"></span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-100 dark:border-gray-700 py-2">
+                        <span class="text-gray-500 dark:text-gray-400">Age</span>
+                        <span class="font-semibold"><span id="w-age"></span> years</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-100 dark:border-gray-700 py-2">
+                        <span class="text-gray-500 dark:text-gray-400">Phone</span>
+                        <span class="font-semibold" id="w-phone"></span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-100 dark:border-gray-700 py-2">
+                        <span class="text-gray-500 dark:text-gray-400">Hired at</span>
+                        <span class="font-semibold" id="w-hired"></span>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <span class="text-gray-500 dark:text-gray-400">Account created</span>
+                        <span class="font-semibold" id="w-created"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-6">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-helmet-safety text-purple-600"></i>
+                    Assigned Helmet
+                </h2>
+                <div id="helmet-info"></div>
+            </div>
+        </div>
+
+        <!-- Active alerts -->
+        <div id="alerts-card" class="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-6 mb-6 hidden">
+            <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+                Active Alerts
+                <span id="alerts-count" class="bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300 text-xs font-bold px-2 py-0.5 rounded-full ml-1"></span>
+            </h2>
+            <div id="alerts-list" class="space-y-3"></div>
+        </div>
+
+        <!-- Recent sensor readings -->
+        <div id="readings-card" class="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-6 hidden">
+            <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-wave-square text-purple-600"></i>
+                Recent Sensor Readings
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
+                            <th class="py-2 pr-3">Time</th>
+                            <th class="py-2 pr-3">Temp (°C)</th>
+                            <th class="py-2 pr-3">Gas</th>
+                            <th class="py-2 pr-3">Tilt (°)</th>
+                            <th class="py-2 pr-3">Battery (V)</th>
+                            <th class="py-2 pr-3">Wi-Fi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="readings-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>
